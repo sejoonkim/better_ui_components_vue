@@ -11,6 +11,7 @@
       </div>
       <button type="submt">Login</button>
     </form>
+    <p v-if="isError">ID error: Check your ID.</p>
   </div>
 </template>
 
@@ -19,13 +20,14 @@ export default {
   data() {
     return {
       username: "",
-      password: ""
+      password: "",
+      isError: false
     };
   },
   methods: {
     submitForm() {
-      console.log("login");
-      this.initForm();
+      this.isError = true;
+      //this.initForm();
     },
     initForm() {
       this.username = "";

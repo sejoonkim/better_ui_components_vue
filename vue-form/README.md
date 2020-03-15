@@ -25,6 +25,14 @@
 - > v-on:submit.prevent === (event), event.preventDefault();
 
 <br/>
+
+### Login Validation
+
+- Old: check user ID input
+
+  > v-if:"true/false"
+
+<br/>
 <br/>
 
 ## Project setup
