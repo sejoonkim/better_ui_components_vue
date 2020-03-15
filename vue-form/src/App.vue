@@ -1,12 +1,12 @@
 <template>
   <div>
-    <form v-on:submit="submitForm">
+    <form v-on:submit.prevent="submitForm">
       <div>
-        <label for="username">ID: </label>
+        <label for="username">ID:</label>
         <input if="username" type="text" v-model="username" />
       </div>
       <div>
-        <label for="password">PW: </label>
+        <label for="password">PW:</label>
         <input id="password" type="text" v-model="password" />
       </div>
       <button type="submt">Login</button>
@@ -23,9 +23,13 @@ export default {
     };
   },
   methods: {
-    submitForm(event) {
-      event.preventDefault();
-      console.log("submitted");
+    submitForm() {
+      console.log("login");
+      this.initForm();
+    },
+    initForm() {
+      this.username = "";
+      this.password = "";
     }
   }
 };

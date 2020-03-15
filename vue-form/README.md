@@ -18,6 +18,15 @@
 
   - stop running eslint
 
+<br/>
+
+### Event controlling
+
+- > v-on:submit.prevent === (event), event.preventDefault();
+
+<br/>
+<br/>
+
 ## Project setup
 
 ```
