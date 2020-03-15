@@ -138,3 +138,16 @@
     props: ['onChange'],
     template: '<main>Contents<button v-on:click="onChange">change message</button></main>'
     ```
+
+<br/>
+
+<br/>
+
+## Vue CLI
+
+- > 1. vue create "name"
+  >
+  > 2. select default
+  > 3. use NPM
+  > 4. cd name
+  > 5. npm run serve
