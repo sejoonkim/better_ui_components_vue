@@ -27,12 +27,8 @@
 - Gradients for depth and dimensions [Using Gradients in UX](https://www.smashingmagazine.com/2018/01/gradients-user-experience-design/)
 - ***Animation** -> higher loads possible [Animated Illustrations, Microinteractions](https://uxdesign.cc/8-ui-ux-design-trends-for-2020-68e37b0278f6)
 - Faster, stronger browser
-
-
-
-
-
-
+  
+  
 
 ## What is Vue.js?
 
