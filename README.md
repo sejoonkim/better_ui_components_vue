@@ -5,7 +5,7 @@
 - Chrome
 - VSCode
 - Node.js
-  - npm ?? ??
+  - npm 사용 가능
 - Vue.js Devtools
 
 <br/>
@@ -100,10 +100,41 @@
 
 <br/>
 
-## Vue.js - Component & Props
+## Vue.js - Component & Props cf)React
 
 - component.html
 
   - > v-bind:"props_name"="date_from_parent_component"
 
   - data -> app-header -> props: ['title'] -> {{ title }}
+
+<br/>
+
+- manipulate data with user input
+
+  - emit event from child to <Root>
+
+  - > _v-on:event_name_from_child_component_="method_name_from_parent_component"
+
+<br/>
+
+### Vue.js vs React.js on Component Communication
+
+- Vue.js: Props + Event
+
+  - ```javascript
+    // change: event name emitted by chlid component
+    // changeStr: method to run after event emitted
+    <app-contents v-on:change="changeStr"></app-contents>
+    ```
+
+- React.js: Props, Callback Function \*\*\*Vue.js syntax is used just to show how this works.
+
+  - ```javascript
+    // send method as props
+    <app-contents v-bind:on-change="changeStr"></app-contents>
+
+    // the method runs after the button is clicked
+    props: ['onChange'],
+    template: '<main>Contents<button v-on:click="onChange">change message</button></main>'
+    ```
