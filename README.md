@@ -56,10 +56,12 @@
 
 1. Component Focused Framework
 
-   - In React, you only have **props**. In Vue, you have to be familiar with **props and events** [Using React Style Callback Props With Vue: Pros and Cons](https://github.com/vuejsdevelopers/blog/wiki/Using-React-Style-Callback-Props-With-Vue:-Pros-and-Cons)
+   - "In React, you only have **props**. In Vue, you have to be familiar with **props and events**
+     ":  [Using React Style Callback Props With Vue: Pros and Cons](https://github.com/vuejsdevelopers/blog/wiki/Using-React-Style-Callback-Props-With-Vue:-Pros-and-Cons)
 
-   - ![alt](https://miro.medium.com/max/1580/0*Xzkw0-T4Uea3d5Yh.png)
-     - [Vue props and emit - parent to child](https://medium.com/@sky790312/about-vue-2-parent-to-child-props-af3b5bb59829)
+   ![alt](https://miro.medium.com/max/1580/0*Xzkw0-T4Uea3d5Yh.png)
+
+   - [Vue props and emit - parent to child](https://medium.com/@sky790312/about-vue-2-parent-to-child-props-af3b5bb59829)
 
    - Cf) React
 
@@ -75,17 +77,21 @@
 <br/>
 
 2. MVVM Pattern
-   - ![alt](https://012.vuejs.org/images/mvvm.png)
-     - VM links el(UI-DOM) and data(data objects): [Vue.js guide](https://012.vuejs.org/guide/)
+
+   ![alt](https://012.vuejs.org/images/mvvm.png)
+
+   - VM links el(UI-DOM) and data(data objects): [Vue.js guide](https://012.vuejs.org/guide/)
 
 <br/>
 
 3. Vue.js = React.js + Angular.js
 
    - React.js's Virtual DOM
-     - ![alt](https://www.systango.com/blog/wp-content/uploads/2017/05/img_2-1024x613.png)
+
+     ![alt](https://www.systango.com/blog/wp-content/uploads/2017/05/img_2-1024x613.png)
 
    <br/>
 
    - Angular.js's Two-way Binding
-     - ![alt](https://1.bp.blogspot.com/-m5ZviuAtgCw/VoF35BkxIGI/AAAAAAAABEc/01YnQRfSCkE/s1600/image1.png)
+
+     ![alt](https://1.bp.blogspot.com/-m5ZviuAtgCw/VoF35BkxIGI/AAAAAAAABEc/01YnQRfSCkE/s1600/image1.png)
