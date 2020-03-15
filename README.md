@@ -8,7 +8,7 @@
   - npm 사용 가능
 - Vue.js Devtools
 
-
+<br/>
 
 ### Initial Settings
 
@@ -18,7 +18,7 @@
 - Live Server
 - Night Owl
 
-
+<br/>
 
 ### 2020 UX Trends
 
@@ -28,9 +28,9 @@
 - ***Animation** -> higher loads possible [Animated Illustrations, Microinteractions](https://uxdesign.cc/8-ui-ux-design-trends-for-2020-68e37b0278f6)
 - Faster, stronger browser  
 
+<br/>
 
-
-
+<br/>
 
 ## What is Vue.js?
 
@@ -42,7 +42,7 @@
 
 - [Vue.js Guide](https://vuejs.org/v2/guide/)
 
-
+<br/>
 
 ### Difference between development/production version
 
