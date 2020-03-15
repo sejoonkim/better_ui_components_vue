@@ -5,7 +5,7 @@
 - Chrome
 - VSCode
 - Node.js
-  - npm 사용 가능
+  - npm ?? ??
 - Vue.js Devtools
 
 <br/>
@@ -25,8 +25,8 @@
 - Dark Theme [Dark UI, Good/Bad/Dos/Donts](https://www.toptal.com/designers/ui/dark-ui)
 - 3D, AR: Currently Flat UI Design -> + dimension, depth [UI/UX design for WebVR](https://www.youtube.com/watch?v=ZOaOYTOpwyM)
 - Gradients for depth and dimensions [Using Gradients in UX](https://www.smashingmagazine.com/2018/01/gradients-user-experience-design/)
-- ***Animation** -> higher loads possible [Animated Illustrations, Microinteractions](https://uxdesign.cc/8-ui-ux-design-trends-for-2020-68e37b0278f6)
-- Faster, stronger browser  
+- **\*Animation** -> higher loads possible [Animated Illustrations, Microinteractions](https://uxdesign.cc/8-ui-ux-design-trends-for-2020-68e37b0278f6)
+- Faster, stronger browser
 
 <br/>
 
@@ -52,12 +52,12 @@
 
 <br/>
 
-## 3 Facts on Vue.js 
+## 3 Facts on Vue.js
 
 1. Component Focused Framework
 
    - "In React, you only have **props**. In Vue, you have to be familiar with **props and events**
-     ":  [Using React Style Callback Props With Vue: Pros and Cons](https://github.com/vuejsdevelopers/blog/wiki/Using-React-Style-Callback-Props-With-Vue:-Pros-and-Cons)
+     ": [Using React Style Callback Props With Vue: Pros and Cons](https://github.com/vuejsdevelopers/blog/wiki/Using-React-Style-Callback-Props-With-Vue:-Pros-and-Cons)
 
    ![alt](https://miro.medium.com/max/1580/0*Xzkw0-T4Uea3d5Yh.png)
 
@@ -95,3 +95,15 @@
    - Angular.js's Two-way Binding
 
      ![alt](https://1.bp.blogspot.com/-m5ZviuAtgCw/VoF35BkxIGI/AAAAAAAABEc/01YnQRfSCkE/s1600/image1.png)
+
+<br/>
+
+<br/>
+
+## Vue.js - Component & Props
+
+- component.html
+
+  - > v-bind:"props_name"="date_from_parent_component"
+
+  - data -> app-header -> props: ['title'] -> {{ title }}

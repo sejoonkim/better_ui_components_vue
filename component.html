@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- <app-header v-bind:Props_name="data_from_parent_component"></app-header> -->
+        <app-header v-bind:title="str"></app-header>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            // Instance Option
+            // Similar to componentDidMount in React
+            el: '#app',
+            data: {
+                str: 'Props String'
+            },
+            components: {
+                //'component_name': component_details,
+                'app-header': {
+                    // add app-header component props
+                    props: ['title'],
+                    template: '<h1>{{ title }}</h1>'
+                }
+
+            }
+        })
+    </script>
+</body>
+
+</html>
