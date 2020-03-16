@@ -34,14 +34,6 @@
 
 <br/>
 
-### Login Validation
-
-- Old: check user ID input
-
-  > v-if:"true/false"
-
-<br/>
-
 - New: dynamically check user ID input
 
   - Use regex
@@ -75,9 +67,22 @@
 
   - Vue dynamically change class
 
-    ```javascript
-    v-bind:class="{ 'error': !isUsernameValid }"
-    ```
+        ```javascript
+        v-bind:class="{ 'error': !isUsernameValid }"
+        ```
+
+    <br/>
+
+- password show/hide
+  - ![alt](./gif/password_show_hide.gif)
+
+<br/>
+<br/>
+
+## UI Component: Toast Notification
+
+- > 1. create ToastPopup.vue
+  > 2. add the component to App.vue
 
 <br/>
 <br/>
