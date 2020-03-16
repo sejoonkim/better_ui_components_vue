@@ -118,6 +118,17 @@
 <br/>
 <br/>
 
+## UI Component: Progress bar
+
+- reset browser default margin
+
+- @keyframes - during animation, change CSS style [link](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)
+
+  - > animation: loading 1s linear
+
+<br/>
+<br/>
+
 ## Project setup
 
 ```
