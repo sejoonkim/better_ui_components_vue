@@ -71,9 +71,10 @@
         v-bind:class="{ 'error': !isUsernameValid }"
         ```
 
-    <br/>
+<br/>
 
 - password show/hide
+
   ![alt](./gif/password_show_hide.gif)
 
 <br/>
