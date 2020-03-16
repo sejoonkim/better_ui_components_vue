@@ -74,7 +74,7 @@
     <br/>
 
 - password show/hide
-  - ![alt](./gif/password_show_hide.gif)
+  ![alt](./gif/password_show_hide.gif)
 
 <br/>
 <br/>
@@ -82,7 +82,38 @@
 ## UI Component: Toast Notification
 
 - > 1. create ToastPopup.vue
-  > 2. add the component to App.vue
+  > 2. add the component to App.vue (same)
+  >    - <toast-popup></toast-popup>
+  >    - <ToastPopup></ToastPopup>
+  > 3. create CSS on browser FIRST \*reset CSS
+
+<br/>
+
+- Send props to ToastPopup.vue, emit 'close' event to App.vue
+
+  1. App.vue
+
+     - > <ToastPopup _v-bind_:_open_="isSuccess"></ToastPopup>
+
+  2. ToastPopup.vue
+
+     - ```javascript
+       export default {
+         props: ["open"],
+         data() {
+           return {};
+         },
+         watch: {
+           open(newValue) {
+             if (newValue) {
+               console.log("open ToastPopup");
+               clearTimeout(timer);
+               timer = setTimeout(() => this.$emit("close"), 2000);
+             }
+           }
+         }
+       };
+       ```
 
 <br/>
 <br/>

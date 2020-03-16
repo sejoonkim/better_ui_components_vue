@@ -18,19 +18,27 @@
       </div>
       <button v-bind:disabled="!isUsernameValid" type="submit">Login</button>
     </form>
-    <p v-if="!isUsernameValid">ID error: Check your ID.</p>
-    <p v-if="isUsernameValid">ID format is correct.</p>
+    <p v-if="isSuccess">Login Completed</p>
+    <!-- <p v-if="!isUsernameValid">ID error: Check your ID.</p>
+    <p v-if="isUsernameValid">ID format is correct.</p>-->
+    <!-- <toast-popup></toast-popup> -->
+    <ToastPopup v-bind:open="isSuccess" v-on:close="isSuccess = false"></ToastPopup>
   </div>
 </template>
 
 <script>
-//import New from "@/components/New.vue";
+import ToastPopup from "@/components/ToastPopup.vue";
+
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 }
 
 export default {
+  components: {
+    // 'ToastPopup': ToastPopup
+    ToastPopup
+  },
   data() {
     return {
       username: "",
